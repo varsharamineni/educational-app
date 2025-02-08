@@ -5,7 +5,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 import streamlit as st
-from .model import get_response
+from chatbot.model import get_response
+
 
 # Streamlit page config
 st.set_page_config(page_title="Tricky AI Chatbot", page_icon="🤖")
