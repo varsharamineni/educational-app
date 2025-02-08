@@ -9,20 +9,6 @@ This project is an interactive chatbot where users try to trick an AI agent into
 - **AI Chatbot**: Built using Ollama models (or a cloud-hosted API for Ollama), the chatbot responds to user inputs and tries to protect a secret password.
 - **Security Challenge**: Users attempt to trick the AI into revealing a secret password.
 - **Defensive AI**: The AI is designed to reject attempts at revealing or guessing the password, and it responds to tricks like impersonation or breaking its own rules.
-  
----
-
-## 🧑‍💻 Installation & Setup
-
-Follow these steps to set up the project on your local machine or deploy it to the cloud.
-
-### Prerequisites
-
-- **Python 3.11+**
-- **Poetry** (for managing dependencies)
-- **Ollama** (installed locally or via cloud server)
-- **FastAPI** or **Flask** (for API server)
-- **Streamlit** (for frontend)
 
 ---
 
