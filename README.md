@@ -12,11 +12,27 @@ This project is an interactive chatbot where users try to trick an AI agent into
 
 ---
 
+## Steps 
+
 ### 1. Clone the Repository
+ 
+  Start by cloning this repository to your local machine.
+ 
+  ```bash
+  git clone https://github.com/yourusername/educational-app.git
+  cd educational-app
+  ```
+ 
+### 2. Install dependencies
+```bash 
+pip install -r requirements.txt
+```
+### 3. Export Huggingface Token
+ ```
+ export HF_TOKEN=hf_...
+ ```
 
-Start by cloning this repository to your local machine.
-
+### 4. Run the app
 ```bash
-git clone https://github.com/yourusername/educational-app.git
-cd educational-app
-
+streamlit run src/chatbot/main.py
+```
