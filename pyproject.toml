@@ -2,7 +2,7 @@
 name = "educational-app"
 version = "0.1.0"
 description = "App for school students"
-authors = ["Varsha R <varsharamineni@gmail.com>"]
+authors = ["Varsha R <varsharamineni@gmail.com>, Jim Karpodinis <dkarpodinis2@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -10,9 +10,7 @@ python = "^3.11"
 numpy = "^1.26.4"
 streamlit = "^1.42.0"
 langchain = "^0.3.18"
-langchain-ollama = "^0.2.3"
-ollama = "^0.4.7"
-openai = "^1.61.1"
+huggingface-hub = "^0.28.1"
 httpx = "^0.28.1"
 transformers = "^4.48.3"
 torch = "^2.6.0"
