@@ -1,5 +1,3 @@
-import sys
-import os
 import streamlit as st
 from hf_inference import get_response, get_client, get_chat_config
 
