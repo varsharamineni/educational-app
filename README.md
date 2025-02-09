@@ -28,7 +28,7 @@ This project is an interactive chatbot where users try to trick an AI agent into
 pip install -r requirements.txt
 ```
 ### 3. Export Huggingface Token
- ```
+ ```bash
  export HF_TOKEN=hf_...
  ```
 
