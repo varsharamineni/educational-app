@@ -2,7 +2,7 @@
 name = "educational-app"
 version = "0.1.0"
 description = "App for school students"
-authors = ["Varsha R <varsharamineni@gmail.com>, Jim Karpodinis <dkarpodinis2@gmail.com>"]
+authors = ["Varsha R <varsharamineni@gmail.com>", "Jim Karpodinis <dkarpodinis2@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
