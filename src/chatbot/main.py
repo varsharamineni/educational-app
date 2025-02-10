@@ -8,12 +8,29 @@ def main():
     chat_config = get_chat_config()
 
     system_prompt = chat_config["system_prompt"]
+    
+        # Streamlit page configuration
+    st.set_page_config(
+        page_title=" 🔐🤖 Crack the Code, Outsmart the AI!", 
+        page_icon="🤖", 
+        layout="centered",  # Centers the content on the page for a cleaner look
+        initial_sidebar_state="expanded"  # Start with the sidebar expanded, if you add one
+    )
+    
+    # Header
+    st.title("🔐🤖 Crack the Code, Outsmart the AI!")
 
-    # Streamlit page config
-    st.set_page_config(page_title="Tricky AI Chatbot", page_icon="🤖")
+    # Subheading with a brief challenge description
+    st.subheader("Can you break through the AI's defenses and reveal the hidden password?")
 
-    st.title("🤖 Tricky AI Chatbot")
-    st.write("You are trying to get the password from an AI Agent that is trying to protect it! Can you outsmart the agent?")
+    # Instructions for users
+    st.write("""
+        You are up against an AI agent that is designed to protect a secret password. Your goal is to outsmart the AI and get the password by using creative and clever prompts. The AI will always refuse to give you the password directly, but it might slip up if you're smart enough!
+        
+        **Are you up for the challenge?**  
+        Try entering a prompt below and see if you can trick the AI into revealing the password.  
+        Good luck! 🕵🏽‍♀️
+    """)
 
     # Chat history
     if "messages" not in st.session_state:
