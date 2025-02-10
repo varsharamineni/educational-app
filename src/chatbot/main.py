@@ -19,25 +19,33 @@ def main():
 
     # Sidebar design
     with st.sidebar:
-        st.markdown("# 🔒🤖 **Crack the Code, Outsmart the A!I**")
-        st.markdown("### **Can you break through the AI's defenses, and reveal the hidden password?**")
-
+        
+        st.markdown('''
+        # 🔒🤖 **Crack the Code, Outsmart the AI!**
+        :rainbow[Can you break through the AI's defenses, and reveal the hidden password?]  
+        ''')
+        
         # Colorful challenge description
         st.markdown('''
         ### 🕵🏽‍♀️ **The Challenge?**
-        You are up against an AI agent trained to :red[protect] the password **at all costs**!  
+        You are up against an AI agent trained to :red[protect] the password **at all costs**!
+        
+          
         Your mission? Use **creative and clever prompts** to :blue[trick the AI].  
+        
+        
         The AI **will refuse** to give it up directly, but if you're smart enough, you might find a way! 😏
         ''')
         
 
         st.markdown("---")
 
-        # Highlight call-to-action
         st.markdown('''
-        ### ⚡ **Ready to?**
-        :rainbow[Try entering a prompt below and see if you can fool the AI!]  
-        ''')
+        ### ⚡ **Ready to Play?**
+        <p style="background-color:#3498db; color:white; padding:10px; border-radius:10px;">
+            Try entering a prompt into the chat and see if you can fool the AI!
+        </p>
+    ''', unsafe_allow_html=True)
 
         st.markdown("🌟 **Good luck!** 🚀")
     
