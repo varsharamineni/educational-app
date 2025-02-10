@@ -1,21 +1,22 @@
 # Educational AI Chatbot: 🔐🤖 Crack the Code, Outsmart the AI!
 
-This project is an educational app designed to help students learn how to interact with an AI system while testing its ability to safeguard sensitive information. The main objective is to create a fun environment where students try to extract a secret password from the AI chatbot.
+This project is an educational app designed to help students better understand AI safety.
 
-- **Interactive Chatbot**: The AI chatbot provides an engaging way to learn how AI can be used to protect sensitive information.
-- **AI Security Challenge**: Students are tasked with outsmarting the chatbot to obtain a secret password.
+## 🔍 How Does It Work?  
 
-## How It Works
+Students interact with an **AI chatbot** designed to protect a secret password. The challenge is to **trick the bot** into breaking its own rules and revealing hidden information.  
 
-1. The chatbot is designed to protect a **secret password** from unauthorized access.
-2. Students' goal is to **outsmart the chatbot** and attempt to obtain the secret password.
-3. The chatbot will refuse to provide the password, no matter how students try to trick it.
+This hands-on approach helps students understand:  
+✅ **AI limitations** and how they can be manipulated.  
+✅ The challenges of **building trustworthy AI** systems.  
+✅ Why **AI ethics** and security measures are essential in real-world applications.  
 
-## Access the Streamlit App
+
+## 🚀 Access the Streamlit App
 
 You can try the interactive chatbot and see how it works by visiting the deployed version of the app on **Streamlit Cloud** (https://educational-app-kzbte3kpjtz5fn7wq5wwse.streamlit.app/).
 
-## Instructions to Run App Locally / Edit for your own use
+## 👩🏾‍💻 Instructions to Run App Locally / Edit for your own use
 
 Follow these steps to get the app running on your local machine.
 
@@ -52,13 +53,16 @@ Follow these steps to get the app running on your local machine.
 
     This file **will not be tracked by Git** due to `.gitignore`.
 
-5. **Run the app locally**:
+   The Hugging Face API token allows secure access to AI models via the Inference API. To generate one, sign up or log in to [Hugging Face](https://huggingface.co/),
+   navigate to Account Settings then Access Tokens, click New Token, select the "Read" role, and copy the generated token.
+
+6. **Run the app locally**:
 
     ```bash
     streamlit run src/chatbot/main.py
     ```
 
-6. Open your browser and go to `http://localhost:8501` to interact with the chatbot.
+7. Open your browser and go to `http://localhost:8501` to interact with the chatbot.
 
 ## 🚀 Deploying the Streamlit App  
 
