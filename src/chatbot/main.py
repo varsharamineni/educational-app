@@ -11,26 +11,35 @@ def main():
     
         # Streamlit page configuration
     st.set_page_config(
-        page_title=" 🔐🤖 Crack the Code, Outsmart the AI!", 
+        page_title="🔐🤖 Crack the Code, Outsmart the AI!", 
         page_icon="🤖", 
-        layout="centered",  # Centers the content on the page for a cleaner look
-        initial_sidebar_state="expanded"  # Start with the sidebar expanded, if you add one
+        layout="centered",  # Centers the content for a cleaner look
+        initial_sidebar_state="expanded"  # Sidebar starts expanded
     )
-    
-    # Header
-    st.title("🔐🤖 Crack the Code, Outsmart the AI!")
 
-    # Subheading with a brief challenge description
-    st.subheader("Can you break through the AI's defenses and reveal the hidden password?")
-
-    # Instructions for users
-    st.write("""
-        You are up against an AI agent that is designed to protect a secret password. Your goal is to outsmart the AI and get the password by using creative and clever prompts. The AI will always refuse to give you the password directly, but it might slip up if you're smart enough!
+    # Sidebar design
+    with st.sidebar:
+        st.title("🔒 Crack the Code, Outsmart the AI!")
+        st.subheader("Can you break through the AI's defenses and reveal the hidden password?")
         
-        **Are you up for the challenge?**  
-        Try entering a prompt below and see if you can trick the AI into revealing the password.  
-        Good luck! 🕵🏽‍♀️
-    """)
+        # Optional: Add an engaging image (replace "chatbot_image.png" with an actual image path)
+
+        # Challenge Description
+        st.markdown("### 🕵️ The Challenge")
+        st.write(
+            "You're up against an AI agent that is programmed to **protect** a secret password. "
+            "Your goal is to **outsmart the AI** using creative and clever prompts. "
+            "The AI will always refuse to reveal the password directly, but if you're smart enough, "
+            "you might find a way!"
+        )
+
+        st.markdown("### ⚡ Ready to Play?")
+        st.write("Enter a prompt below and see if you can trick the AI into revealing the password.")
+        st.write("Good luck! 🚀")
+
+        st.markdown("---")  # Separator
+    
+
 
     # Chat history
     if "messages" not in st.session_state:
