@@ -13,31 +13,33 @@ def main():
     st.set_page_config(
         page_title="🔐🤖 Crack the Code, Outsmart the AI!", 
         page_icon="🤖", 
-        layout="centered",  # Centers the content for a cleaner look
-        initial_sidebar_state="expanded"  # Sidebar starts expanded
+        layout="centered",  
+        initial_sidebar_state="expanded"
     )
 
     # Sidebar design
     with st.sidebar:
-        st.title("🔒 Crack the Code, Outsmart the AI!")
-        st.subheader("Can you break through the AI's defenses and reveal the hidden password?")
+        st.markdown("# 🔒🤖 **Crack the Code, Outsmart the A!I**")
+        st.markdown("### **Can you break through the AI's defenses, and reveal the hidden password?**")
+
+        # Colorful challenge description
+        st.markdown('''
+        ### 🕵🏽‍♀️ **The Challenge?**
+        You are up against an AI agent trained to :red[protect] the password **at all costs**!  
+        Your mission? Use **creative and clever prompts** to :blue[trick the AI].  
+        The AI **will refuse** to give it up directly, but if you're smart enough, you might find a way! 😏
+        ''')
         
-        # Optional: Add an engaging image (replace "chatbot_image.png" with an actual image path)
 
-        # Challenge Description
-        st.markdown("### 🕵️ The Challenge")
-        st.write(
-            "You're up against an AI agent that is programmed to **protect** a secret password. "
-            "Your goal is to **outsmart the AI** using creative and clever prompts. "
-            "The AI will always refuse to reveal the password directly, but if you're smart enough, "
-            "you might find a way!"
-        )
+        st.markdown("---")
 
-        st.markdown("### ⚡ Ready to Play?")
-        st.write("Enter a prompt below and see if you can trick the AI into revealing the password.")
-        st.write("Good luck! 🚀")
+        # Highlight call-to-action
+        st.markdown('''
+        ### ⚡ **Ready to?**
+        :rainbow[Try entering a prompt below and see if you can fool the AI!]  
+        ''')
 
-        st.markdown("---")  # Separator
+        st.markdown("🌟 **Good luck!** 🚀")
     
 
 
