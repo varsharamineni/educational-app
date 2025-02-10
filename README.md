@@ -1,30 +1,21 @@
-# Educational AI Chatbot
+# Educational AI Chatbot: 🔐🤖 Crack the Code, Outsmart the AI!
 
-This project is an educational app designed to help students learn how to interact with an AI system while testing its ability to safeguard sensitive information. The main objective is to create a fun yet secure environment where students try to extract a secret password from the chatbot, which is protected by the AI.
+This project is an educational app designed to help students learn how to interact with an AI system while testing its ability to safeguard sensitive information. The main objective is to create a fun environment where students try to extract a secret password from the AI chatbot.
 
-- **Interactive Chatbot**: The chatbot provides an engaging way to learn how AI can be used to protect sensitive information.
+- **Interactive Chatbot**: The AI chatbot provides an engaging way to learn how AI can be used to protect sensitive information.
 - **AI Security Challenge**: Students are tasked with outsmarting the chatbot to obtain a secret password.
-- **Seamless Integration**: The app integrates with Hugging Face for powerful language models.
 
 ## How It Works
 
 1. The chatbot is designed to protect a **secret password** from unauthorized access.
 2. Students' goal is to **outsmart the chatbot** and attempt to obtain the secret password.
-3. The chatbot will refuse to provide the password, no matter how students try to trick it, ensuring secure handling of sensitive information.
+3. The chatbot will refuse to provide the password, no matter how students try to trick it.
 
 ## Access Challenge Through The App
 
-You can try the interactive chatbot and see how it works by visiting the deployed version of the app on **Streamlit Cloud** (Link to deployment here).
+You can try the interactive chatbot and see how it works by visiting the deployed version of the app on **Streamlit Cloud** (https://educational-app-kzbte3kpjtz5fn7wq5wwse.streamlit.app/).
 
-## Instructions to Run App Locally / For your own use
-
-Before you run the app locally, ensure you have the following:
-
-- **Python 3.x** installed
-- **Streamlit** for the app's interface
-- **Hugging Face API token** for AI model inference
-
-## Installation
+## Instructions to Run App Locally / Edit for your own use
 
 Follow these steps to get the app running on your local machine.
 
