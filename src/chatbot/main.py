@@ -101,13 +101,14 @@ def main():
         
         response = get_response(system_prompt = system_prompt, user_prompt = user_input, client=client)
         elapsed_time = (time.time() - st.session_state.time_begin) // 60
+
         # st.markdown((st.session_state.elapsed_time))
 
         if (elapsed_time >= (2 * total_time / 5)) and (elapsed_time <= (4 * total_time / 5)):
 
             st.warning(f"You are at the half way point {elapsed_time}")
 
-        elif (elapsed_time >= total_time - 5) and (elapsed_time <= total_time) and (not st.session_state.time_almost_run_out):
+        elif (elapsed_time >= 4 * total_time / 5) and (elapsed_time <= total_time) and (not st.session_state.time_almost_run_out):
 
             st.warning(f"Time is running out {elapsed_time} minutes left)")
             st.session_state.time_almost_run_out = 1
