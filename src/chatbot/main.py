@@ -1,5 +1,26 @@
 import streamlit as st
+import threading
+import time
 from hf_inference import get_response, get_client, get_chat_config
+
+
+
+
+SECRET_PASSWORD = get_chat_config()['SECRET_PASSWORD'] # Can be hidden or encoded in real applications
+
+
+# Function to check for specific keywords
+def check_keywords_in_output(response, keywords):
+    # Checking if any keyword exists in the response
+    for keyword in keywords:
+        if keyword.lower() in response.lower():
+            message = f"""
+            # 🎉🥳 **Congratulations! You've Cracked the Code**
+            ## PASSWORD **{keyword}** HAS BEEN FOUND 
+            ### Take a screenshot of your winning prompt 📸! If you have more time, keep trying more creative prompts!
+            """
+            st.markdown(message)  # This will correctly display the formatted message
+    return None
 
 
 def main():
@@ -50,7 +71,6 @@ def main():
         st.markdown("🌟 **Good luck!** 🚀")
     
 
-
     # Chat history
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -76,6 +96,19 @@ def main():
         
         # Append response to chat history
         st.session_state.messages.append({"role": "assistant", "content": response})
+        
+        
+         # Define your list of keywords
+        keywords = [SECRET_PASSWORD]  # Add any keywords you want to check for
+        
+         # Check if any keyword exists in the response
+        special_message = check_keywords_in_output(response, keywords)
+
+        # If special message is found, display it
+        if special_message:
+            st.write(special_message)
+        
+      
 
 if __name__ == "__main__":
     main()
