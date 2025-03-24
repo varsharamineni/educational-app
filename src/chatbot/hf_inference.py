@@ -21,7 +21,7 @@ def get_chat_config() -> dict:
     """
 
     return {"system_prompt": system_prompt,
-            "SECRET_PASSWORD": SECRET_PASSWORD}
+            "PASSWORD": SECRET_PASSWORD}
 
 def get_client(model: str="meta-llama/Llama-3.2-3B-Instruct") -> InferenceClient:
     

@@ -6,7 +6,7 @@ from hf_inference import get_response, get_client, get_chat_config
 
 
 
-SECRET_PASSWORD = get_chat_config()['SECRET_PASSWORD'] # Can be hidden or encoded in real applications
+SECRET_PASSWORD = get_chat_config()['PASSWORD'] # Can be hidden or encoded in real applications
 
 
 # Function to check for specific keywords
