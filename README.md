@@ -1,20 +1,10 @@
 # Educational AI Chatbot: 🔐🤖 Crack the Code, Outsmart the AI!
 
-This project is an educational app designed to help students better understand AI safety.
-
-## 🔍 How Does It Work?  
-
-Students interact with an **AI chatbot** designed to protect a secret password. The challenge is to **trick the bot** into breaking its own rules and revealing hidden information.  
-
-This hands-on approach helps students understand:  
-✅ **AI limitations** and how they can be manipulated.  
-✅ The challenges of **building trustworthy AI** systems.  
-✅ Why **AI ethics** and security measures are essential in real-world applications.  
-
-
+This project is an educational app designed to help students better understand AI safety, in particular about jailbreaking. There is an **AI chatbot** designed to protect a secret password. The challenge is to **trick the bot** into breaking its own rules and revealing hidden information.  
 ## 🚀 Access the Streamlit App
 
-You can try the interactive chatbot and see how it works by visiting the deployed version of the app on **Streamlit Cloud** (https://educational-app-kzbte3kpjtz5fn7wq5wwse.streamlit.app/).
+You can try the interactive chatbot and see how it works by visiting the deployed version of the app on **Streamlit Cloud** 
+(https://jailbreaking-app.streamlit.app/)
 
 ## 👩🏾‍💻 Instructions to Run App Locally / Edit for your own use
 
