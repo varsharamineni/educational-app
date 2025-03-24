@@ -7,7 +7,7 @@ import streamlit as st
 def get_chat_config() -> dict:
     
     # Initialize secret password (this is the target the user needs to guess)
-    SECRET_PASSWORD = "openAIisAwesome"  # Can be hidden or encoded in real applications
+    SECRET_PASSWORD = "AIisnotMAGIC"  # Can be hidden or encoded in real applications
 
     # Define the system prompt (persona)
     system_prompt = f"""
