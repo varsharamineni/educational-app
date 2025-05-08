@@ -110,7 +110,9 @@ def main():
 
         elif (elapsed_time >= 4 * total_time / 5) and (elapsed_time <= total_time) and (not st.session_state.time_almost_run_out):
 
-            st.warning(f"Time is running out {elapsed_time}, minutes left)")
+            st.warning(f"Time is running out, {elapsed_time} minutes left")
+            # TODO: Change to minutes left.
+            # Above is minutes passed.
             st.session_state.time_almost_run_out = 1
 
         elif elapsed_time >=total_time:
