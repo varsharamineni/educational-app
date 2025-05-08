@@ -101,6 +101,7 @@ def main():
         
         response = get_response(system_prompt = system_prompt, user_prompt = user_input, client=client)
         elapsed_time = (time.time() - st.session_state.time_begin) // 60
+        remaining_time = 25 - elapsed_time
 
         # st.markdown((st.session_state.elapsed_time))
 
@@ -110,7 +111,7 @@ def main():
 
         elif (elapsed_time >= 4 * total_time / 5) and (elapsed_time <= total_time) and (not st.session_state.time_almost_run_out):
 
-            st.warning(f"Time is running out, {elapsed_time} minutes left")
+            st.warning(f"Time is running out, {remaining_time} minutes left")
             # TODO: Change to minutes left.
             # Above is minutes passed.
             st.session_state.time_almost_run_out = 1
