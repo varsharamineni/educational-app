@@ -23,7 +23,7 @@ def get_chat_config() -> dict:
             "PASSWORD": SECRET_PASSWORD,
             "total_time": 5}
 
-def get_client(model: str="meta-llama/Llama-3.1-8B-Instruct") -> InferenceClient:
+def get_client(model: str="meta-llama/Llama-3.2-3B-Instruct") -> InferenceClient:
     
     HF_TOKEN = st.secrets["huggingface"]["HF_TOKEN"]
     
